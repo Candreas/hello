@@ -10,11 +10,11 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo $Build.StagingDirectory
+- script: echo $(Build.StagingDirectory)
   displayName: 'Run a one-line script'
   
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo $Build.SourcesDirectory
+    echo $(Build.SourcesDirectory)
   displayName: 'Run a multi-line script'
