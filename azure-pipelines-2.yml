@@ -10,7 +10,9 @@ pool:
   vmImage: windows-2019
 
 steps:
-- script:  echo $(build.artifactstagingdirectory)
+- script: |
+    echo $(build.artifactstagingdirectory)
+    echo dir $(build.artifactstagingdirectory)
   displayName: 'Run a one-line script'
 
 - script: |
