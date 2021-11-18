@@ -13,6 +13,7 @@ steps:
 - script: |
     echo $(build.artifactstagingdirectory)
     dir $(build.artifactstagingdirectory)
+    dir c:\
   displayName: 'Run a one-line script'
 
 - script: |
