@@ -18,7 +18,6 @@ steps:
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 - task: PowerShell@2
   inputs:
@@ -36,10 +35,10 @@ steps:
  
                 # Download the files to local temp folder
                 Write-Output "downloading $adSdkUrl…"
-                Invoke-WebRequest -Uri $adSdkUrl -OutFile $adSDKPath 
+                #Invoke-WebRequest -Uri $adSdkUrl -OutFile $adSDKPath 
                 # Install the SDKs (use the "qn" flag to install silently)
-                Write-Output "installing $adSdkPath…"
-                Start-Process $adSdkPath -ArgumentList "/q" -Wait
+                #Write-Output "installing $adSdkPath…"
+                #Start-Process $adSdkPath -ArgumentList "/q" -Wait
                 Write-Output " start Ranorex Agent"
                 $RanorexAgent  = "C:\Program Files (x86)\Ranorex\Agent\RanorexRemoteAgent"
                 #Start-Process $RanorexAgent  "/qn"   -Wait
