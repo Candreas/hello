@@ -40,7 +40,7 @@ stages:
         displayName: 'a multi-line script'
 
 - stage: ''
-  displayName:  'ExecTCTests'
+  displayName:  'ExecTestsForToolchain'
   jobs: 
   - job: 'VerifyInstallation'
     steps:
