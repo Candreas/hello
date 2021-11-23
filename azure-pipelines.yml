@@ -11,19 +11,29 @@ pool:
 
 stages:
 - stage: 'PublishTemplates'
-displayName: 'Publish Templates'
-jobs: 
+  displayName: 'Publish Templates'
+  jobs: 
   - job: 'PublishTemplates'
-       steps:
-        - script: echo $(Build.StagingDirectory)
-           displayName: 'Run a one-line script'
+    steps:
+      - script: echo $(Build.StagingDirectory)
+        displayName: 'Run a one-line script'
 
 - stage: 'DelployTemplates'
-displayName: 'Deploy Templates'
-jobs: 
+  displayName: 'Deploy Templates'
+  jobs: 
   - job: 'DelployTemplates'
-     steps:
-       - script: |
+    steps:
+      - script: |
+         echo Add other tasks to build, test, and deploy your project.
+         echo $(Build.SourcesDirectory)
+         displayName: 'Run a multi-line script'
+
+- stage: 'Update'
+  displayName: 'Deploy Templates'
+  jobs: 
+  - job: 'updating'
+    steps:
+      - script: |
          echo Add other tasks to build, test, and deploy your project.
          echo $(Build.SourcesDirectory)
          displayName: 'Run a multi-line script'
