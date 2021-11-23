@@ -28,8 +28,9 @@ stages:
          echo E N V I R O N M E N T 
          echo $env 
         displayName: 'Deploy' 
+
 - stage: 'Update'
-  displayName: 'Verify Toolchain installation '
+  displayName:  'Verify Toolchain installation '
   jobs: 
   - job: 'Update'
     steps:
@@ -37,14 +38,5 @@ stages:
          echo Add other tasks to build, test, and deploy your project.
          #echo $(Build.SourcesDirectory)
         displayName: 'a multi-line script
-
-- stage:'TestC'
-  displayName:'TestExecution'
-  jobs:
-   - job:'Update'
-     steps:
-      -script |
-        echo Add other tasks to build, test, and deploy your project.
-         #echo $(Build.SourcesDirectory)
-       displayName: 'a multi-line script'
+# http://yaml.org/type/map.html -----------------------------------------------#   
 
