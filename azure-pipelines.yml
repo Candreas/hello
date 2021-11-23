@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name:pool
+  name: pool
 stages:
 - stage: 'GetTestCase'
   displayName: 'GetTestCase'
