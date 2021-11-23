@@ -19,13 +19,13 @@ stages:
         displayName: 'Run a one-line script'
 
 - stage: 'DelployTemplates'
-  displayName: 'DeployTemplates'
+  displayName: 'Deploy Templates'
   jobs: 
   - job: 'DelployTemplates'
     steps:
       - script: |
          echo Add other tasks to build, test, and deploy your project.
-         #echo $(Build.SourcesDirectory)
+         echo $(Build.SourcesDirectory)
          displayName: 'Run a multi-line script'
 
 - stage: 'Update'
@@ -36,4 +36,5 @@ stages:
       - script: |
          echo Add other tasks to build, test, and deploy your project.
          #echo $(Build.SourcesDirectory)
-         displayName: 'Run a multi-line script'
+         displayName: 'a multi-line script'
+         
