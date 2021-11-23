@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-- stage: 'Get TestCase '
+- stage: 'GetTestCase '
   displayName: 'Publish Templates'
   jobs: 
   - job: 'PublishTemplates'
