@@ -37,6 +37,4 @@ stages:
       - script: |
          echo Add other tasks to build, test, and deploy your project.
          #echo $(Build.SourcesDirectory)
-        displayName: 'a multi-line script
-# http://yaml.org/type/map.html -----------------------------------------------#   
-
+        displayName: 'a multi-line script 
