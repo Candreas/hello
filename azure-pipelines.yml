@@ -25,7 +25,8 @@ stages:
     steps:
       - script: |
          echo Add other tasks to build, test, and deploy your project.
-         echo $(Build.SourcesDirectory)
+         echo E N V I R O N M E N T 
+         echo $env 
         displayName: 'Deploy' 
 - stage: 'Update'
   displayName: 'Update'
