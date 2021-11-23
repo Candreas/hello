@@ -29,20 +29,20 @@ stages:
          echo $env 
         displayName: 'Deploy'
 
-- stage: 'Update'
+- stage: 'Verify'
   displayName:  'Verify Toolchain installation'
   jobs: 
-  - job: 'Update'
+  - job: 'Verify'
     steps:
       - script: |
          echo Add other tasks to build, test, and deploy your project.
          #echo $(Build.SourcesDirectory)
         displayName: 'a multi-line script'
 
-- stage: 'Update'
-  displayName:  'Verify Toolchain installation'
+- stage: ''
+  displayName:  'VerifyInstallation'
   jobs: 
-  - job: 'Update'
+  - job: 'VerifyInstallation'
     steps:
       - script: |
          echo Add other tasks to build, test, and deploy your project.
