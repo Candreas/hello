@@ -11,7 +11,7 @@ pool:
 
 stages:
 - stage: 'GetTestCase'
-  displayName: 'GetTetCase'
+  displayName: 'GetTestCase'
   jobs: 
   - job: 'PublishTemplates'
     steps:
