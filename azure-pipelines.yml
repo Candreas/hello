@@ -29,9 +29,9 @@ stages:
          displayName: 'Run a multi-line script'
 
 - stage: 'Update'
-  displayName: 'Deploy Templates'
+  displayName: 'Update'
   jobs: 
-  - job: 'updating'
+  - job: 'Update'
     steps:
       - script: |
          echo Add other tasks to build, test, and deploy your project.
