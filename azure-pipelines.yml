@@ -19,7 +19,7 @@ stages:
         displayName: 'Run a one-line script'
 
 - stage: 'DelployTemplates'
-  displayName: 'Deploy Templates'
+  displayName: 'DeployTemplates'
   jobs: 
   - job: 'DelployTemplates'
     steps:
