@@ -38,12 +38,13 @@ stages:
          #echo $(Build.SourcesDirectory)
         displayName: 'a multi-line script
 
-- stage: 'Update' 
-  displayName : 'TestExecution'
+- stage:'TestC'
+  displayName:'TestExecution'
   jobs:
-    job: 'Update'
-    steps:
-      - script: |
-         echo Add other tasks to build, test, and deploy your project.
+   - job:'Update'
+     steps:
+      -script |
+        echo Add other tasks to build, test, and deploy your project.
          #echo $(Build.SourcesDirectory)
-        displayName: 'a multi-line script'
+       displayName: 'a multi-line script'
+
