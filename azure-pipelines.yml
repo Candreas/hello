@@ -11,7 +11,7 @@ pool:
 
 stages:
 - stage: 'GetTestCase'
-  displayName: 'Publish Templates'
+  displayName: 'GetTetCase'
   jobs: 
   - job: 'PublishTemplates'
     steps:
@@ -19,7 +19,7 @@ stages:
         displayName: 'Run a one-line script'
 
 - stage: 'DelployTemplates'
-  displayName: 'Deploy Templates'
+  displayName: 'BuildUp Toolchain '
   jobs: 
   - job: 'DelployTemplates'
     steps:
@@ -29,12 +29,21 @@ stages:
          echo $env 
         displayName: 'Deploy' 
 - stage: 'Update'
-  displayName: 'Update'
+  displayName: 'Verify Toolchain installation '
   jobs: 
   - job: 'Update'
     steps:
       - script: |
          echo Add other tasks to build, test, and deploy your project.
          #echo $(Build.SourcesDirectory)
+        displayName: 'a multi-line script
+
+- stage: 'Update' 
+  displayName : 'TestExecution'
+  jobs:
+    job: 'Update'
+    steps:
+      - script: |
+         echo Add other tasks to build, test, and deploy your project.
+         #echo $(Build.SourcesDirectory)
         displayName: 'a multi-line script'
-         
