@@ -39,7 +39,7 @@ stages:
          #echo $(Build.SourcesDirectory)
         displayName: 'a multi-line script'
 
-- stage: ''
+- stage: 'ExecToolchainTests'
   displayName:  'ExecTestsForToolchain'
   jobs: 
   - job: 'VerifyInstallation'
@@ -49,3 +49,12 @@ stages:
          #echo $(Build.SourcesDirectory)
         displayName: 'a multi-line script'
 
+- stage: ''
+  displayName:  'UploadTestresult'
+  jobs: 
+  - job: 'UploadResultsToTMS'
+    steps:
+      - script: |
+         echo Add other tasks to build, test, and deploy your project.
+         #echo $(Build.SourcesDirectory)
+        displayName: 'a multi-line script'
